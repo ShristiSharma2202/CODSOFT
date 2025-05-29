@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetPals - Adopt Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PetPals</h1>
+  </header>
+
+  <!-- Hero Section with Image and CTA -->
+  <section class="hero">
+    <img src="https://goskippy.com/wp-content/uploads/2024/06/AdobeStock_71615744572-768x439.jpeg" alt="Cute pets" style="width: 80%; max-height: 700px; object-fit: cover;">
+
+    <h2>Find Your New HOMIE Today!</h2>
+    <p>Give a loving home to a furry friend. Adoption saves lives.</p>
+    <button onclick="document.getElementById('adopt-form').scrollIntoView({behavior: 'smooth'});">Adopt Now</button>
+    <button onclick="document.getElementById('donate').scrollIntoView({behavior: 'smooth'});">Donate</button>
+  </section>
+
+  <!-- Adoption Form -->
+  <section id="adopt-form">
+    <h2>Adoption Form</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="pet">Preferred Pet (dog/cat):</label>
+      <input type="text" id="pet" name="pet">
+
+      <label for="reason">Why do you want to adopt?</label>
+      <textarea id="reason" name="reason" rows="4" required></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <!-- Visit Scheduling -->
+  <section id="visit">
+    <h2>Schedule a Visit</h2>
+    <p>Come meet and spend some time with our adorable pets in person!</p>
+    <form>
+      <label for="visit-date">Preferred Date:</label>
+      <input type="date" id="visit-date" name="visit-date" required>
+
+      <label for="visit-time">Preferred Time:</label>
+      <input type="time" id="visit-time" name="visit-time" required>
+
+      <button type="submit">Book Visit</button>
+    </form>
+  </section>
+
+  <!-- Donation Section -->
+  <section id="donate">
+    <h2>Support Our Pet Shelter</h2>
+    <p>Your donations help us feed, care, and find homes for pets in need.</p>
+    <button onclick="alert('Redirecting to donation page...')">Donate Now</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PetPals. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
